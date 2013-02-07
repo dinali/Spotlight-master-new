@@ -34,11 +34,6 @@
 		96BF32EC16C1717E0050DFA3 /* MitigationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF32EB16C1717E0050DFA3 /* MitigationCollectionViewController.m */; };
 		96BF32F216C182DF0050DFA3 /* crpmap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F116C182DF0050DFA3 /* crpmap.gif */; };
 		96BF32F416C182F20050DFA3 /* co2mitigation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F316C182F20050DFA3 /* co2mitigation.gif */; };
-		96BF32FA16C195CD0050DFA3 /* images-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F516C195CD0050DFA3 /* images-1.jpeg */; };
-		96BF32FB16C195CD0050DFA3 /* images-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F616C195CD0050DFA3 /* images-2.jpeg */; };
-		96BF32FC16C195CD0050DFA3 /* images-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F716C195CD0050DFA3 /* images-3.jpeg */; };
-		96BF32FD16C195CD0050DFA3 /* images-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F816C195CD0050DFA3 /* images-4.jpeg */; };
-		96BF32FE16C195CD0050DFA3 /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F916C195CD0050DFA3 /* images.jpeg */; };
 		96BF330116C1A6450050DFA3 /* PublicationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF330016C1A6450050DFA3 /* PublicationsViewController.m */; };
 		96CEB5B616C3F257000BA8DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5B516C3F257000BA8DB /* CoreLocation.framework */; };
 		96CEB5B816C3F266000BA8DB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5B716C3F266000BA8DB /* CoreText.framework */; };
@@ -49,7 +44,6 @@
 		96CEB5C216C3F29C000BA8DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5C116C3F29C000BA8DB /* Security.framework */; };
 		96CEB5C416C3F2BB000BA8DB /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5C316C3F2BB000BA8DB /* libc++.dylib */; };
 		96CEB5C616C3F2C8000BA8DB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5C516C3F2C8000BA8DB /* libz.dylib */; };
-		96CEB5C816C3F5DF000BA8DB /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5C716C3F5DF000BA8DB /* ArcGIS.bundle */; };
 		96CEB5CE16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5CB16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m */; };
 		96CEB5CF16C3F97C000BA8DB /* FoodDesertLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5CD16C3F97C000BA8DB /* FoodDesertLocatorViewController.m */; };
 		96CEB5D216C3FD04000BA8DB /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5D116C3FD04000BA8DB /* AudioViewController.m */; };
@@ -58,11 +52,19 @@
 		96CEB5D916C3FD7E000BA8DB /* PublicationsSimple.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5D716C3FD7E000BA8DB /* PublicationsSimple.plist */; };
 		96CEB5E116C3FDB0000BA8DB /* fooddesertPodcast.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5DA16C3FDB0000BA8DB /* fooddesertPodcast.mp3 */; };
 		96CEB5E216C3FDB0000BA8DB /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5DB16C3FDB0000BA8DB /* headphones.png */; };
-		96CEB5E316C3FDB0000BA8DB /* images-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5DC16C3FDB0000BA8DB /* images-1.jpeg */; };
-		96CEB5E416C3FDB0000BA8DB /* images-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5DD16C3FDB0000BA8DB /* images-2.jpeg */; };
-		96CEB5E516C3FDB0000BA8DB /* images-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5DE16C3FDB0000BA8DB /* images-3.jpeg */; };
-		96CEB5E616C3FDB0000BA8DB /* images-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5DF16C3FDB0000BA8DB /* images-4.jpeg */; };
-		96CEB5E716C3FDB0000BA8DB /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5E016C3FDB0000BA8DB /* images.jpeg */; };
+		96CEB5E916C4063C000BA8DB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5E816C4063C000BA8DB /* AVFoundation.framework */; };
+		96CEB5EA16C408A8000BA8DB /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5D116C3FD04000BA8DB /* AudioViewController.m */; };
+		96CEB5EB16C408C1000BA8DB /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5D416C3FD12000BA8DB /* MovieViewController.m */; };
+		96CEB5ED16C40B7F000BA8DB /* movie.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5EC16C40B7F000BA8DB /* movie.png */; };
+		96CEB5EF16C40CDC000BA8DB /* ers_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5EE16C40CDC000BA8DB /* ers_icon.png */; };
+		96CEB5F216C43959000BA8DB /* images-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F116C43959000BA8DB /* images-1.jpeg */; };
+		96CEB5F716C43974000BA8DB /* images-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F316C43973000BA8DB /* images-2.jpeg */; };
+		96CEB5F816C43974000BA8DB /* images-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F416C43973000BA8DB /* images-3.jpeg */; };
+		96CEB5F916C43974000BA8DB /* images-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F516C43973000BA8DB /* images-4.jpeg */; };
+		96CEB5FA16C43974000BA8DB /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F616C43973000BA8DB /* images.jpeg */; };
+		96CEB5FC16C43A1C000BA8DB /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5FB16C43A1C000BA8DB /* ArcGIS.bundle */; };
+		96CEB5FE16C43EFD000BA8DB /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5FD16C43EFD000BA8DB /* libstdc++.dylib */; };
+		96CEB60016C44036000BA8DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5FF16C44035000BA8DB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,11 +115,6 @@
 		96BF32EB16C1717E0050DFA3 /* MitigationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitigationCollectionViewController.m; sourceTree = "<group>"; };
 		96BF32F116C182DF0050DFA3 /* crpmap.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = crpmap.gif; sourceTree = "<group>"; };
 		96BF32F316C182F20050DFA3 /* co2mitigation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = co2mitigation.gif; sourceTree = "<group>"; };
-		96BF32F516C195CD0050DFA3 /* images-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpeg"; sourceTree = "<group>"; };
-		96BF32F616C195CD0050DFA3 /* images-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-2.jpeg"; sourceTree = "<group>"; };
-		96BF32F716C195CD0050DFA3 /* images-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-3.jpeg"; sourceTree = "<group>"; };
-		96BF32F816C195CD0050DFA3 /* images-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-4.jpeg"; sourceTree = "<group>"; };
-		96BF32F916C195CD0050DFA3 /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
 		96BF32FF16C1A6450050DFA3 /* PublicationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicationsViewController.h; path = ../PublicationsViewController.h; sourceTree = "<group>"; };
 		96BF330016C1A6450050DFA3 /* PublicationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PublicationsViewController.m; path = ../PublicationsViewController.m; sourceTree = "<group>"; };
 		96CEB5B516C3F257000BA8DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -129,7 +126,6 @@
 		96CEB5C116C3F29C000BA8DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		96CEB5C316C3F2BB000BA8DB /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		96CEB5C516C3F2C8000BA8DB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		96CEB5C716C3F5DF000BA8DB /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = Spotlight/ArcGIS.bundle; sourceTree = "<group>"; };
 		96CEB5CA16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDesertLocatorAppDelegate.h; sourceTree = "<group>"; };
 		96CEB5CB16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDesertLocatorAppDelegate.m; sourceTree = "<group>"; };
 		96CEB5CC16C3F97C000BA8DB /* FoodDesertLocatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDesertLocatorViewController.h; sourceTree = "<group>"; };
@@ -142,11 +138,17 @@
 		96CEB5D716C3FD7E000BA8DB /* PublicationsSimple.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PublicationsSimple.plist; sourceTree = "<group>"; };
 		96CEB5DA16C3FDB0000BA8DB /* fooddesertPodcast.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fooddesertPodcast.mp3; sourceTree = "<group>"; };
 		96CEB5DB16C3FDB0000BA8DB /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphones.png; sourceTree = "<group>"; };
-		96CEB5DC16C3FDB0000BA8DB /* images-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-1.jpeg"; sourceTree = "<group>"; };
-		96CEB5DD16C3FDB0000BA8DB /* images-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-2.jpeg"; sourceTree = "<group>"; };
-		96CEB5DE16C3FDB0000BA8DB /* images-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-3.jpeg"; sourceTree = "<group>"; };
-		96CEB5DF16C3FDB0000BA8DB /* images-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images-4.jpeg"; sourceTree = "<group>"; };
-		96CEB5E016C3FDB0000BA8DB /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		96CEB5E816C4063C000BA8DB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		96CEB5EC16C40B7F000BA8DB /* movie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movie.png; sourceTree = "<group>"; };
+		96CEB5EE16C40CDC000BA8DB /* ers_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ers_icon.png; sourceTree = "<group>"; };
+		96CEB5F116C43959000BA8DB /* images-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-1.jpeg"; path = "Spotlight/images-1.jpeg"; sourceTree = "<group>"; };
+		96CEB5F316C43973000BA8DB /* images-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-2.jpeg"; path = "Spotlight/images-2.jpeg"; sourceTree = "<group>"; };
+		96CEB5F416C43973000BA8DB /* images-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-3.jpeg"; path = "Spotlight/images-3.jpeg"; sourceTree = "<group>"; };
+		96CEB5F516C43973000BA8DB /* images-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-4.jpeg"; path = "Spotlight/images-4.jpeg"; sourceTree = "<group>"; };
+		96CEB5F616C43973000BA8DB /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = Spotlight/images.jpeg; sourceTree = "<group>"; };
+		96CEB5FB16C43A1C000BA8DB /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
+		96CEB5FD16C43EFD000BA8DB /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		96CEB5FF16C44035000BA8DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CEB60016C44036000BA8DB /* MapKit.framework in Frameworks */,
+				96CEB5FE16C43EFD000BA8DB /* libstdc++.dylib in Frameworks */,
+				96CEB5E916C4063C000BA8DB /* AVFoundation.framework in Frameworks */,
 				96CEB5C616C3F2C8000BA8DB /* libz.dylib in Frameworks */,
 				96CEB5C416C3F2BB000BA8DB /* libc++.dylib in Frameworks */,
 				9613F4C016BAFC3200FDCB32 /* UIKit.framework in Frameworks */,
@@ -185,7 +190,8 @@
 		9613F4B316BAFC3200FDCB32 = {
 			isa = PBXGroup;
 			children = (
-				9613F4C516BAFC3200FDCB32 /* Spotlight */,
+				96CEB5FF16C44035000BA8DB /* MapKit.framework */,
+				9613F4C516BAFC3200FDCB32 /* Classes */,
 				9613F4E916BAFC3300FDCB32 /* SpotlightTests */,
 				9613F4BE16BAFC3200FDCB32 /* Frameworks */,
 				9613F4BD16BAFC3200FDCB32 /* Products */,
@@ -204,15 +210,17 @@
 		9613F4BE16BAFC3200FDCB32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96CEB5E816C4063C000BA8DB /* AVFoundation.framework */,
 				96CEB5B716C3F266000BA8DB /* CoreText.framework */,
 				96CEB5B516C3F257000BA8DB /* CoreLocation.framework */,
 				96CEB5B916C3F274000BA8DB /* QuartzCore.framework */,
 				96CEB5C116C3F29C000BA8DB /* Security.framework */,
 				96CEB5C316C3F2BB000BA8DB /* libc++.dylib */,
+				96CEB5FD16C43EFD000BA8DB /* libstdc++.dylib */,
+				96CEB5C516C3F2C8000BA8DB /* libz.dylib */,
 				96CEB5BD16C3F28A000BA8DB /* MobileCoreServices.framework */,
 				96CEB5BF16C3F293000BA8DB /* OpenGLES.framework */,
 				96CEB5BB16C3F280000BA8DB /* MediaPlayer.framework */,
-				96CEB5C516C3F2C8000BA8DB /* libz.dylib */,
 				9613F4BF16BAFC3200FDCB32 /* UIKit.framework */,
 				9613F4C116BAFC3200FDCB32 /* Foundation.framework */,
 				9613F4C316BAFC3200FDCB32 /* CoreGraphics.framework */,
@@ -221,7 +229,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9613F4C516BAFC3200FDCB32 /* Spotlight */ = {
+		9613F4C516BAFC3200FDCB32 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				96BF32EA16C1717E0050DFA3 /* MitigationCollectionViewController.h */,
@@ -247,29 +255,27 @@
 				9613F4D716BAFC3300FDCB32 /* MainStoryboard.storyboard */,
 				960039B016C057EE0005C5BD /* CollectionViewCell.h */,
 				960039B116C057EE0005C5BD /* CollectionViewCell.m */,
+				96CEB5F016C41400000BA8DB /* Resources */,
 				9613F4C616BAFC3200FDCB32 /* Supporting Files */,
 			);
+			name = Classes;
 			path = Spotlight;
 			sourceTree = "<group>";
 		};
 		9613F4C616BAFC3200FDCB32 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96CEB5C716C3F5DF000BA8DB /* ArcGIS.bundle */,
 				9613F4C716BAFC3200FDCB32 /* Spotlight-Info.plist */,
 				9613F4C816BAFC3200FDCB32 /* InfoPlist.strings */,
-				96BF32F516C195CD0050DFA3 /* images-1.jpeg */,
-				96BF32F616C195CD0050DFA3 /* images-2.jpeg */,
-				96BF32F716C195CD0050DFA3 /* images-3.jpeg */,
-				96BF32F816C195CD0050DFA3 /* images-4.jpeg */,
-				96BF32F916C195CD0050DFA3 /* images.jpeg */,
+				96CEB5EE16C40CDC000BA8DB /* ers_icon.png */,
+				96CEB5EC16C40B7F000BA8DB /* movie.png */,
 				96CEB5DA16C3FDB0000BA8DB /* fooddesertPodcast.mp3 */,
 				96CEB5DB16C3FDB0000BA8DB /* headphones.png */,
-				96CEB5DC16C3FDB0000BA8DB /* images-1.jpeg */,
-				96CEB5DD16C3FDB0000BA8DB /* images-2.jpeg */,
-				96CEB5DE16C3FDB0000BA8DB /* images-3.jpeg */,
-				96CEB5DF16C3FDB0000BA8DB /* images-4.jpeg */,
-				96CEB5E016C3FDB0000BA8DB /* images.jpeg */,
+				96CEB5F116C43959000BA8DB /* images-1.jpeg */,
+				96CEB5F316C43973000BA8DB /* images-2.jpeg */,
+				96CEB5F416C43973000BA8DB /* images-3.jpeg */,
+				96CEB5F516C43973000BA8DB /* images-4.jpeg */,
+				96CEB5F616C43973000BA8DB /* images.jpeg */,
 				96CEB5D616C3FD7E000BA8DB /* Publications.plist */,
 				96CEB5D716C3FD7E000BA8DB /* PublicationsSimple.plist */,
 				960039B316C05B920005C5BD /* Background1.tiff */,
@@ -305,6 +311,15 @@
 				9613F4EC16BAFC3300FDCB32 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96CEB5F016C41400000BA8DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96CEB5FB16C43A1C000BA8DB /* ArcGIS.bundle */,
+			);
+			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,21 +406,18 @@
 				960039B816C05B920005C5BD /* Background3.tiff in Resources */,
 				96BF32F216C182DF0050DFA3 /* crpmap.gif in Resources */,
 				96BF32F416C182F20050DFA3 /* co2mitigation.gif in Resources */,
-				96BF32FA16C195CD0050DFA3 /* images-1.jpeg in Resources */,
-				96BF32FB16C195CD0050DFA3 /* images-2.jpeg in Resources */,
-				96BF32FC16C195CD0050DFA3 /* images-3.jpeg in Resources */,
-				96BF32FD16C195CD0050DFA3 /* images-4.jpeg in Resources */,
-				96BF32FE16C195CD0050DFA3 /* images.jpeg in Resources */,
-				96CEB5C816C3F5DF000BA8DB /* ArcGIS.bundle in Resources */,
 				96CEB5D816C3FD7E000BA8DB /* Publications.plist in Resources */,
 				96CEB5D916C3FD7E000BA8DB /* PublicationsSimple.plist in Resources */,
 				96CEB5E116C3FDB0000BA8DB /* fooddesertPodcast.mp3 in Resources */,
 				96CEB5E216C3FDB0000BA8DB /* headphones.png in Resources */,
-				96CEB5E316C3FDB0000BA8DB /* images-1.jpeg in Resources */,
-				96CEB5E416C3FDB0000BA8DB /* images-2.jpeg in Resources */,
-				96CEB5E516C3FDB0000BA8DB /* images-3.jpeg in Resources */,
-				96CEB5E616C3FDB0000BA8DB /* images-4.jpeg in Resources */,
-				96CEB5E716C3FDB0000BA8DB /* images.jpeg in Resources */,
+				96CEB5ED16C40B7F000BA8DB /* movie.png in Resources */,
+				96CEB5EF16C40CDC000BA8DB /* ers_icon.png in Resources */,
+				96CEB5F216C43959000BA8DB /* images-1.jpeg in Resources */,
+				96CEB5F716C43974000BA8DB /* images-2.jpeg in Resources */,
+				96CEB5F816C43974000BA8DB /* images-3.jpeg in Resources */,
+				96CEB5F916C43974000BA8DB /* images-4.jpeg in Resources */,
+				96CEB5FA16C43974000BA8DB /* images.jpeg in Resources */,
+				96CEB5FC16C43A1C000BA8DB /* ArcGIS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96CEB5EB16C408C1000BA8DB /* MovieViewController.m in Sources */,
+				96CEB5EA16C408A8000BA8DB /* AudioViewController.m in Sources */,
 				9613F4CC16BAFC3300FDCB32 /* main.m in Sources */,
 				9613F4D016BAFC3300FDCB32 /* ERSAppDelegate.m in Sources */,
 				9613F4FC16BB002700FDCB32 /* OverviewViewController.m in Sources */,
@@ -515,6 +529,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "${HOME}/Library/SDKs/ArcGIS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -528,6 +543,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					ArcGIS,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -547,12 +568,19 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/dinali/Library/SDKs/ArcGIS;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_load",
+					"-framework",
+					ArcGIS,
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;

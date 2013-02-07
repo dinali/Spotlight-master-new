@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FoodDesertLocatorDelegate : NSObject
+@class FoodDesertLocatorViewController;
+
+@interface FoodDesertLocatorAppDelegate : NSObject <UIApplicationDelegate> {
+    UIWindow *window;
+    FoodDesertLocatorViewController *viewController;
+}
+
+@property (strong, nonatomic) UIWindow *window;
+//@property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (strong, nonatomic) FoodDesertLocatorViewController *viewController;
 
 @end
+

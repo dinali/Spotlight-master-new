@@ -61,7 +61,7 @@ Environmental program design.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1882" y="-248"/>
+            <point key="canvasLocation" x="-2782" y="320"/>
         </scene>
         <!--Effects View Controller - Agricultural Effects on Climate Change-->
         <scene sceneID="mkx-Nl-hKQ">
@@ -146,7 +146,7 @@ Environmental program design.</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhX-Bo-cmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1896" y="915"/>
+            <point key="canvasLocation" x="-1740" y="307"/>
         </scene>
         <!--Mitigation Collection View Controller-->
         <scene sceneID="w6h-J1-e9M">
@@ -227,7 +227,7 @@ Environmental program design.</string>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adc-jS-MZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="2075"/>
+            <point key="canvasLocation" x="-694" y="395"/>
         </scene>
         <!--Publications View Controller - Publications-->
         <scene sceneID="psV-yU-0vk">
@@ -253,7 +253,7 @@ Environmental program design.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4S-0M-Lqx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1965" y="3221"/>
+            <point key="canvasLocation" x="341" y="395"/>
         </scene>
         <!--Navigation Controller - Publications-->
         <scene sceneID="8bz-WA-C5V">
@@ -269,7 +269,201 @@ Environmental program design.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iCC-1W-dPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="3221"/>
+            <point key="canvasLocation" x="313" y="-859"/>
+        </scene>
+        <!--Navigation Controller - Audio-->
+        <scene sceneID="BJa-l0-gNB">
+            <objects>
+                <navigationController title="Audio" definesPresentationContext="YES" id="YDg-Vw-5XP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Podcast" image="headphones.png" id="yKN-DD-h6c"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hOq-ZA-VPT">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AU8-WK-Ytf" kind="relationship" relationship="rootViewController" id="4fB-9U-PJG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZRT-cd-h94" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="-859"/>
+        </scene>
+        <!--Audio View Controller - You Tube-->
+        <scene sceneID="ASV-if-7Gb">
+            <objects>
+                <viewController id="AU8-WK-Ytf" customClass="AudioViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uLf-S8-hHc">
+                        <rect key="frame" x="0.0" y="64" width="768" height="916"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Lrx-JA-Osb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="EPX-wF-eGK"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="adjustVolume" destination="AU8-WK-Ytf" eventType="valueChanged" id="s4O-LE-ZwM"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Food Desert Locator .mp3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ca-6Z-2WD">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="546" id="EHV-z4-bXK"/>
+                                    <constraint firstAttribute="height" constant="29" id="fZW-5i-Pdz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHa-hi-5y2">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="AU8-WK-Ytf" eventType="touchUpInside" id="Tt1-HK-IiL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybn-U9-PFQ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="stop">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio" destination="AU8-WK-Ytf" eventType="touchUpInside" id="yMD-F7-8Qn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ybn-U9-PFQ" firstAttribute="leading" secondItem="uLf-S8-hHc" secondAttribute="leading" constant="201" id="6Y9-dT-4GP"/>
+                            <constraint firstItem="uHa-hi-5y2" firstAttribute="top" secondItem="uLf-S8-hHc" secondAttribute="top" constant="125" id="Iz5-Wn-Bxd"/>
+                            <constraint firstItem="4ca-6Z-2WD" firstAttribute="leading" secondItem="uLf-S8-hHc" secondAttribute="leading" constant="119" id="aFf-BC-ok1"/>
+                            <constraint firstItem="Lrx-JA-Osb" firstAttribute="leading" secondItem="uLf-S8-hHc" secondAttribute="leading" constant="315" id="j0Q-4D-r2l"/>
+                            <constraint firstItem="uHa-hi-5y2" firstAttribute="leading" secondItem="uLf-S8-hHc" secondAttribute="leading" constant="114" id="lNA-Je-RwK"/>
+                            <constraint firstItem="4ca-6Z-2WD" firstAttribute="top" secondItem="uLf-S8-hHc" secondAttribute="top" constant="78" id="laZ-2g-YIh"/>
+                            <constraint firstItem="Ybn-U9-PFQ" firstAttribute="baseline" secondItem="uHa-hi-5y2" secondAttribute="baseline" type="default" id="q1v-sZ-EwG"/>
+                            <constraint firstItem="Lrx-JA-Osb" firstAttribute="top" secondItem="uLf-S8-hHc" secondAttribute="top" constant="31" id="qvl-QI-wUZ"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="gzq-Gu-PXg"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="You Tube" id="Zdn-40-XKw"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="4ca-6Z-2WD" id="f83-0e-ckT"/>
+                        <outlet property="playButton" destination="uHa-hi-5y2" id="PkJ-oz-JK3"/>
+                        <outlet property="stopButton" destination="Ybn-U9-PFQ" id="gJh-XF-n0g"/>
+                        <outlet property="volumeControl" destination="Lrx-JA-Osb" id="smH-xf-06R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3VJ-bc-xLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347" y="413"/>
+        </scene>
+        <!--Movie View Controller-->
+        <scene sceneID="2XU-jC-lMM">
+            <objects>
+                <viewController id="bPq-I7-1tw" customClass="MovieViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZyS-84-gH5">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="USDA Economist Says Higher Food Prices in 2013" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97t-v0-TxL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="8v3-Md-xTt"/>
+                                    <constraint firstAttribute="width" constant="498" id="iOy-y5-Fh8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ers_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="1op-oU-vjd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="Iqj-gf-irJ"/>
+                                    <constraint firstAttribute="height" constant="54" id="sFk-nj-F9o"/>
+                                </constraints>
+                            </imageView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fje-fL-yW3">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="597" id="LYf-nq-86R"/>
+                                    <constraint firstAttribute="width" constant="715" id="MdW-ER-A74"/>
+                                </constraints>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foS-7H-JtX">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="play">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playMovie" destination="bPq-I7-1tw" eventType="touchUpInside" id="ufI-53-tuX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fje-fL-yW3" firstAttribute="top" secondItem="1op-oU-vjd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="AX5-e4-DB4"/>
+                            <constraint firstItem="97t-v0-TxL" firstAttribute="top" secondItem="ZyS-84-gH5" secondAttribute="top" constant="36" id="NcF-ao-bWg"/>
+                            <constraint firstItem="97t-v0-TxL" firstAttribute="leading" secondItem="1op-oU-vjd" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Wei-D9-o86"/>
+                            <constraint firstItem="1op-oU-vjd" firstAttribute="top" secondItem="ZyS-84-gH5" secondAttribute="top" constant="21" id="ZnC-Yu-4Gl"/>
+                            <constraint firstItem="foS-7H-JtX" firstAttribute="trailing" secondItem="1op-oU-vjd" secondAttribute="trailing" type="default" id="lRK-IK-Y8L"/>
+                            <constraint firstItem="foS-7H-JtX" firstAttribute="leading" secondItem="Fje-fL-yW3" secondAttribute="leading" type="default" id="nIX-5C-Qbm"/>
+                            <constraint firstItem="Fje-fL-yW3" firstAttribute="centerX" secondItem="ZyS-84-gH5" secondAttribute="centerX" type="default" id="pJf-rf-cW9"/>
+                            <constraint firstItem="foS-7H-JtX" firstAttribute="top" secondItem="Fje-fL-yW3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rpE-P2-VlA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2jD-2s-Omk"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="97t-v0-TxL" id="7Si-FB-hg7"/>
+                        <outlet property="logoView" destination="1op-oU-vjd" id="2f9-WB-Hzg"/>
+                        <outlet property="startButton" destination="foS-7H-JtX" id="Pln-WU-4FA"/>
+                        <outlet property="youTubeView" destination="Fje-fL-yW3" id="8g8-Xa-oKK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oW2-pK-bZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224" y="413"/>
+        </scene>
+        <!--Food Desert Locator View Controller-->
+        <scene sceneID="cIj-Z4-V3W">
+            <objects>
+                <viewController id="EPG-tE-1xb" customClass="FoodDesertLocatorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tqt-Q3-VVS">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jxi-ZW-EJo">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="768" id="rah-CN-6Ul"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jxi-ZW-EJo" firstAttribute="leading" secondItem="tqt-Q3-VVS" secondAttribute="leading" constant="-50" id="sOJ-d3-7vs"/>
+                            <constraint firstItem="jxi-ZW-EJo" firstAttribute="top" secondItem="tqt-Q3-VVS" secondAttribute="top" type="default" id="vvT-v4-kD3"/>
+                            <constraint firstItem="jxi-ZW-EJo" firstAttribute="bottom" secondItem="tqt-Q3-VVS" secondAttribute="bottom" type="default" id="vy2-3X-MCG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="may-cN-58B"/>
+                    <connections>
+                        <outlet property="mapView" destination="jxi-ZW-EJo" id="6so-oh-Z42"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p42-Vi-JN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3256" y="419"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5zq-cc-iSU">
@@ -286,11 +480,14 @@ Environmental program design.</string>
                         <segue destination="Pkj-3a-GgT" kind="relationship" relationship="viewControllers" id="1NA-D6-y87"/>
                         <segue destination="Wvh-if-VdC" kind="relationship" relationship="viewControllers" id="QPJ-V8-EJw"/>
                         <segue destination="dzD-lF-tvG" kind="relationship" relationship="viewControllers" id="yLA-1f-fwk"/>
+                        <segue destination="YDg-Vw-5XP" kind="relationship" relationship="viewControllers" id="u2j-iP-EcZ"/>
+                        <segue destination="NUw-8g-oEf" kind="relationship" relationship="viewControllers" id="60Y-ks-IyN"/>
+                        <segue destination="fKF-c3-W38" kind="relationship" relationship="viewControllers" id="BG2-4P-A0R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgI-O0-zAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-86" y="764"/>
+            <point key="canvasLocation" x="-46" y="-2164"/>
         </scene>
         <!--Navigation Controller - Home-->
         <scene sceneID="p2b-Dy-57M">
@@ -309,7 +506,7 @@ Environmental program design.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voK-gO-dPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="-248"/>
+            <point key="canvasLocation" x="-2788" y="-896"/>
         </scene>
         <!--Navigation Controller - Effects-->
         <scene sceneID="nS1-hz-H2Q">
@@ -328,7 +525,7 @@ Environmental program design.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqO-8a-uwl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="923"/>
+            <point key="canvasLocation" x="-1740" y="-885"/>
         </scene>
         <!--Navigation Controller - Mitigation-->
         <scene sceneID="Pcd-4o-ToL">
@@ -347,10 +544,51 @@ Environmental program design.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2m-cu-bBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="915" y="2093"/>
+            <point key="canvasLocation" x="-709" y="-867"/>
+        </scene>
+        <!--Navigation Controller - Video-->
+        <scene sceneID="VC5-v5-dYb">
+            <objects>
+                <navigationController title="Video" id="NUw-8g-oEf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="movie.png" id="jxu-iK-gdu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kaa-Lk-Jj1">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bPq-I7-1tw" kind="relationship" relationship="rootViewController" id="zew-wN-kcT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWV-Ew-mEB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2266" y="-851"/>
+        </scene>
+        <!--Navigation Controller - Item-->
+        <scene sceneID="A8o-EZ-HkW">
+            <objects>
+                <navigationController id="fKF-c3-W38" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="rdR-6B-Mfm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zww-8h-zdr">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EPG-tE-1xb" kind="relationship" relationship="rootViewController" id="BBM-rN-LrG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6F-hw-AZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3234" y="-867"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ers_icon.png" width="46" height="57"/>
+        <image name="headphones.png" width="22" height="21"/>
+        <image name="movie.png" width="19" height="25"/>
         <image name="naturalresources.jpg" width="727" height="101"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
