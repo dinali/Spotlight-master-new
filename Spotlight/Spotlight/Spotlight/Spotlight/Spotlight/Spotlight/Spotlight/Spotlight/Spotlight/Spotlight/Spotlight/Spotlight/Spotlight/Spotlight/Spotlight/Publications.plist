@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>Author</key>
+			<string>The Role of Agriculture in Reducing Greenhouse Gas Emissions</string>
+			<key>Title</key>
+			<string>John Horowitz and Jessica Gottlieb</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>“No-Till” Farming Is a Growing Practice</string>
+			<key>Author</key>
+			<string>John Horowitz, Robert Ebel, and Kohei Ueda</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Baselines in Environmental Markets: Tradeoffs Between Cost and Additionality</string>
+			<key>Author</key>
+			<string>Elizabeth Marshall and Marca Weinberg</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>The Use of Markets To Increase Private Investment in Environmental Stewardship</string>
+			<key>Author</key>
+			<string>Marc Ribaudo, LeRoy Hansen, Daniel Hellerstein, and Catherine Greene</string>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Title</key>
+			<string>Agricultural Land Tenure and Carbon Offsets</string>
+			<key>Author</key>
+			<string>Roger Claassen and Mitch Morehart</string>
+		</dict>
+		<dict>
+			<key>TItle</key>
+			<string>Water Conservation in Irrigated Agriculture: Trends and Challenges in the Face of Emerging Demands</string>
+			<key>Author</key>
+			<string>Glenn Schaible and Marcel Aillery</string>
+		</dict>
+		<dict>
+			<key>Title</key>
+			<string>Agricultural Adaptation to a Changing Climate: Economic and Environmental Implications Vary by U.S. Region</string>
+			<key>Author</key>
+			<string>Scott Malcolm, Elizabeth Marshall, Marcel Aillery, Paul Heisey, Michael Livingston, and Kelly Day-Rubenstein</string>
+		</dict>
+	</array>
+</array>
+</plist>
