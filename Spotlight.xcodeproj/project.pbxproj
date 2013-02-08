@@ -35,6 +35,7 @@
 		96BF32F216C182DF0050DFA3 /* crpmap.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F116C182DF0050DFA3 /* crpmap.gif */; };
 		96BF32F416C182F20050DFA3 /* co2mitigation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 96BF32F316C182F20050DFA3 /* co2mitigation.gif */; };
 		96BF330116C1A6450050DFA3 /* PublicationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF330016C1A6450050DFA3 /* PublicationsViewController.m */; };
+		96C3EC8D16C53C8700304000 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C3EC8C16C53C8700304000 /* map.png */; };
 		96CEB5B616C3F257000BA8DB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5B516C3F257000BA8DB /* CoreLocation.framework */; };
 		96CEB5B816C3F266000BA8DB /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5B716C3F266000BA8DB /* CoreText.framework */; };
 		96CEB5BA16C3F274000BA8DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5B916C3F274000BA8DB /* QuartzCore.framework */; };
@@ -44,7 +45,6 @@
 		96CEB5C216C3F29C000BA8DB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5C116C3F29C000BA8DB /* Security.framework */; };
 		96CEB5C416C3F2BB000BA8DB /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5C316C3F2BB000BA8DB /* libc++.dylib */; };
 		96CEB5C616C3F2C8000BA8DB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5C516C3F2C8000BA8DB /* libz.dylib */; };
-		96CEB5CE16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5CB16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m */; };
 		96CEB5CF16C3F97C000BA8DB /* FoodDesertLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5CD16C3F97C000BA8DB /* FoodDesertLocatorViewController.m */; };
 		96CEB5D216C3FD04000BA8DB /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5D116C3FD04000BA8DB /* AudioViewController.m */; };
 		96CEB5D516C3FD12000BA8DB /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB5D416C3FD12000BA8DB /* MovieViewController.m */; };
@@ -117,6 +117,7 @@
 		96BF32F316C182F20050DFA3 /* co2mitigation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = co2mitigation.gif; sourceTree = "<group>"; };
 		96BF32FF16C1A6450050DFA3 /* PublicationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicationsViewController.h; path = ../PublicationsViewController.h; sourceTree = "<group>"; };
 		96BF330016C1A6450050DFA3 /* PublicationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PublicationsViewController.m; path = ../PublicationsViewController.m; sourceTree = "<group>"; };
+		96C3EC8C16C53C8700304000 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		96CEB5B516C3F257000BA8DB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		96CEB5B716C3F266000BA8DB /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		96CEB5B916C3F274000BA8DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -126,8 +127,6 @@
 		96CEB5C116C3F29C000BA8DB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		96CEB5C316C3F2BB000BA8DB /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		96CEB5C516C3F2C8000BA8DB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		96CEB5CA16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDesertLocatorAppDelegate.h; sourceTree = "<group>"; };
-		96CEB5CB16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDesertLocatorAppDelegate.m; sourceTree = "<group>"; };
 		96CEB5CC16C3F97C000BA8DB /* FoodDesertLocatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodDesertLocatorViewController.h; sourceTree = "<group>"; };
 		96CEB5CD16C3F97C000BA8DB /* FoodDesertLocatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodDesertLocatorViewController.m; sourceTree = "<group>"; };
 		96CEB5D016C3FD04000BA8DB /* AudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
@@ -190,7 +189,6 @@
 		9613F4B316BAFC3200FDCB32 = {
 			isa = PBXGroup;
 			children = (
-				96CEB5FF16C44035000BA8DB /* MapKit.framework */,
 				9613F4C516BAFC3200FDCB32 /* Classes */,
 				9613F4E916BAFC3300FDCB32 /* SpotlightTests */,
 				9613F4BE16BAFC3200FDCB32 /* Frameworks */,
@@ -210,6 +208,7 @@
 		9613F4BE16BAFC3200FDCB32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96CEB5FF16C44035000BA8DB /* MapKit.framework */,
 				96CEB5E816C4063C000BA8DB /* AVFoundation.framework */,
 				96CEB5B716C3F266000BA8DB /* CoreText.framework */,
 				96CEB5B516C3F257000BA8DB /* CoreLocation.framework */,
@@ -238,8 +237,6 @@
 				96CEB5D116C3FD04000BA8DB /* AudioViewController.m */,
 				96BF32FF16C1A6450050DFA3 /* PublicationsViewController.h */,
 				96BF330016C1A6450050DFA3 /* PublicationsViewController.m */,
-				96CEB5CA16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.h */,
-				96CEB5CB16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m */,
 				96CEB5CC16C3F97C000BA8DB /* FoodDesertLocatorViewController.h */,
 				96CEB5CD16C3F97C000BA8DB /* FoodDesertLocatorViewController.m */,
 				960039AD16C056640005C5BD /* EffectsViewController.h */,
@@ -267,6 +264,7 @@
 			children = (
 				9613F4C716BAFC3200FDCB32 /* Spotlight-Info.plist */,
 				9613F4C816BAFC3200FDCB32 /* InfoPlist.strings */,
+				96C3EC8C16C53C8700304000 /* map.png */,
 				96CEB5EE16C40CDC000BA8DB /* ers_icon.png */,
 				96CEB5EC16C40B7F000BA8DB /* movie.png */,
 				96CEB5DA16C3FDB0000BA8DB /* fooddesertPodcast.mp3 */,
@@ -418,6 +416,7 @@
 				96CEB5F916C43974000BA8DB /* images-4.jpeg in Resources */,
 				96CEB5FA16C43974000BA8DB /* images.jpeg in Resources */,
 				96CEB5FC16C43A1C000BA8DB /* ArcGIS.bundle in Resources */,
+				96C3EC8D16C53C8700304000 /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +461,6 @@
 				96BF32E916C165C60050DFA3 /* CustomHeaderView.m in Sources */,
 				96BF32EC16C1717E0050DFA3 /* MitigationCollectionViewController.m in Sources */,
 				96BF330116C1A6450050DFA3 /* PublicationsViewController.m in Sources */,
-				96CEB5CE16C3F97C000BA8DB /* FoodDesertLocatorAppDelegate.m in Sources */,
 				96CEB5CF16C3F97C000BA8DB /* FoodDesertLocatorViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,9 +588,17 @@
 		9613F4F516BAFC3300FDCB32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(HOME)/Library/SDKs/ArcGIS";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spotlight/Spotlight-Prefix.pch";
 				INFOPLIST_FILE = "Spotlight/Spotlight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_Load",
+					"-framework",
+					ArcGIS,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -601,9 +607,17 @@
 		9613F4F616BAFC3300FDCB32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(HOME)/Library/SDKs/ArcGIS";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spotlight/Spotlight-Prefix.pch";
 				INFOPLIST_FILE = "Spotlight/Spotlight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"-all_Load",
+					"-framework",
+					ArcGIS,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

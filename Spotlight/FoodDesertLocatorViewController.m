@@ -17,24 +17,31 @@
 @synthesize mapView = _mapView;
 @synthesize dynamicLayer = _dynamicLayer, dynamicLayerView = _dynamicLayerView;
 
-
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
 	// set the delegate for the map view
-	self.mapView.layerDelegate = self;
+	_mapView.layerDelegate = self;
 	
 	//create an instance of a tiled map service layer
 	AGSTiledMapServiceLayer *tiledLayer = [[AGSTiledMapServiceLayer alloc] initWithURL:[NSURL URLWithString:kTiledMapServiceURL]];
-	
-	//Add it to the map view
-	UIView<AGSLayerView>* lyr = [self.mapView addMapLayer:tiledLayer withName:@"Tiled Layer"];
     
-	// Setting these two properties lets the map draw while still performing a zoom/pan
-	lyr.drawDuringPanning = YES;
-	lyr.drawDuringZooming = YES;
-	
+	//Add it to the map view
+    
+    //Now
+    AGSLayer* layer = [self.mapView mapLayerForName:@"Tiled Layer"];
+    
+  //AGSLayer
+ //   UIView <AGSLayer> *lyer = [_mapView addMapLayer:tiledLayer withName:@"Tiled Layer"];
+        // Setting these two properties lets the map draw while still performing a zoom/pan
+       
+           // lyr.drawDuringPanning = YES; crashes here
+           // lyr.drawDuringZooming = YES;
+    NSLog(@"after adding mapLayer");
+    NSLog(@"URL = %@", kDynamicMapServiceURL);
+    
+    // no more AGSLayerView
+    
 	//create an instance of a dynmaic map layer
 	self.dynamicLayer = [[AGSDynamicMapServiceLayer alloc] initWithURL:[NSURL URLWithString:kDynamicMapServiceURL]];
 	
@@ -60,6 +67,24 @@
 	
 }
 
+// deprecated
+//- (void) mapView:(AGSMapView*) mapView didLoadLayerForLayerView:(UIView<AGSLayerView>*) layerView {
+//  	NSLog(@"Layer added successfully");
+//}
+//
+//- (void) mapView:(AGSMapView*) mapView  failedLoadingLayerForLayerView:(UIView<AGSLayerView>*) layerView withError:(NSError*) error {
+//    NSLog(@"Error: %@",error);
+//}
+
+//3. Implement method for success
+- (void) layerDidLoad:(AGSLayer*) layer{
+    NSLog(@"Layer added successfully");
+}
+
+//4. Implement method for error
+- (void) layer:(AGSLayer*) layer didFailToLoadWithError:(NSError*)error{
+    NSLog(@"Error: %@",error);
+}
 
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

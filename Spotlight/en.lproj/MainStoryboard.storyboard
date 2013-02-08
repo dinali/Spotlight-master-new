@@ -435,7 +435,7 @@ Environmental program design.</string>
             </objects>
             <point key="canvasLocation" x="2224" y="413"/>
         </scene>
-        <!--Food Desert Locator View Controller-->
+        <!--Food Desert Locator View Controller - USDA ERS Food Desert Locator-->
         <scene sceneID="cIj-Z4-V3W">
             <objects>
                 <viewController id="EPG-tE-1xb" customClass="FoodDesertLocatorViewController" sceneMemberID="viewController">
@@ -443,27 +443,26 @@ Environmental program design.</string>
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jxi-ZW-EJo">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="768" id="rah-CN-6Ul"/>
-                                </constraints>
-                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-bQ-Fkz" customClass="AGSMapView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jxi-ZW-EJo" firstAttribute="leading" secondItem="tqt-Q3-VVS" secondAttribute="leading" constant="-50" id="sOJ-d3-7vs"/>
-                            <constraint firstItem="jxi-ZW-EJo" firstAttribute="top" secondItem="tqt-Q3-VVS" secondAttribute="top" type="default" id="vvT-v4-kD3"/>
-                            <constraint firstItem="jxi-ZW-EJo" firstAttribute="bottom" secondItem="tqt-Q3-VVS" secondAttribute="bottom" type="default" id="vy2-3X-MCG"/>
+                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="trailing" secondItem="tqt-Q3-VVS" secondAttribute="trailing" type="default" id="7GB-tF-GYm"/>
+                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="top" secondItem="tqt-Q3-VVS" secondAttribute="top" type="default" id="NVF-QK-EgY"/>
+                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="leading" secondItem="tqt-Q3-VVS" secondAttribute="leading" type="default" id="XIe-sO-bZW"/>
+                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="bottom" secondItem="tqt-Q3-VVS" secondAttribute="bottom" type="default" id="w5F-fU-9LR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="may-cN-58B"/>
+                    <navigationItem key="navigationItem" title="USDA ERS Food Desert Locator" id="may-cN-58B"/>
                     <connections>
-                        <outlet property="mapView" destination="jxi-ZW-EJo" id="6so-oh-Z42"/>
+                        <outlet property="mapView" destination="e7F-bQ-Fkz" id="gkI-lK-0yw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p42-Vi-JN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3256" y="419"/>
+            <point key="canvasLocation" x="3234" y="419"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5zq-cc-iSU">
@@ -565,11 +564,11 @@ Environmental program design.</string>
             </objects>
             <point key="canvasLocation" x="2266" y="-851"/>
         </scene>
-        <!--Navigation Controller - Item-->
+        <!--Navigation Controller - Map-->
         <scene sceneID="A8o-EZ-HkW">
             <objects>
                 <navigationController id="fKF-c3-W38" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rdR-6B-Mfm"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map.png" id="rdR-6B-Mfm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="zww-8h-zdr">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -588,9 +587,88 @@ Environmental program design.</string>
     <resources>
         <image name="ers_icon.png" width="46" height="57"/>
         <image name="headphones.png" width="22" height="21"/>
+        <image name="map.png" width="26" height="21"/>
         <image name="movie.png" width="19" height="25"/>
         <image name="naturalresources.jpg" width="727" height="101"/>
     </resources>
+    <classes>
+        <class className="AGSMapView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGSMapView.h"/>
+        </class>
+        <class className="AudioViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="BtnGoLocalClick:"/>
+                <relationship kind="action" name="adjustVolume"/>
+                <relationship kind="action" name="playAudio:"/>
+                <relationship kind="action" name="stopAudio"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="volumeControl" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+        <class className="CollectionViewCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="CustomHeaderView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomHeaderView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sectionTitleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="EffectsViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EffectsViewController.h"/>
+        </class>
+        <class className="FoodDesertLocatorViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FoodDesertLocatorViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="opacitySliderValueChanged:"/>
+                <relationship kind="outlet" name="mapView" candidateClass="AGSMapView"/>
+            </relationships>
+        </class>
+        <class className="MitigationCollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MitigationCollectionViewController.h"/>
+        </class>
+        <class className="MovieViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MovieViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="playMovie"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="logoView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="youTubeView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="OverviewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OverviewViewController.h"/>
+        </class>
+        <class className="PublicationsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PublicationsViewController.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
