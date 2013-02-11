@@ -62,7 +62,6 @@
 		96CEB5F816C43974000BA8DB /* images-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F416C43973000BA8DB /* images-3.jpeg */; };
 		96CEB5F916C43974000BA8DB /* images-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F516C43973000BA8DB /* images-4.jpeg */; };
 		96CEB5FA16C43974000BA8DB /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5F616C43973000BA8DB /* images.jpeg */; };
-		96CEB5FC16C43A1C000BA8DB /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96CEB5FB16C43A1C000BA8DB /* ArcGIS.bundle */; };
 		96CEB5FE16C43EFD000BA8DB /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5FD16C43EFD000BA8DB /* libstdc++.dylib */; };
 		96CEB60016C44036000BA8DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96CEB5FF16C44035000BA8DB /* MapKit.framework */; };
 /* End PBXBuildFile section */
@@ -145,7 +144,6 @@
 		96CEB5F416C43973000BA8DB /* images-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-3.jpeg"; path = "Spotlight/images-3.jpeg"; sourceTree = "<group>"; };
 		96CEB5F516C43973000BA8DB /* images-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "images-4.jpeg"; path = "Spotlight/images-4.jpeg"; sourceTree = "<group>"; };
 		96CEB5F616C43973000BA8DB /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpeg; path = Spotlight/images.jpeg; sourceTree = "<group>"; };
-		96CEB5FB16C43A1C000BA8DB /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
 		96CEB5FD16C43EFD000BA8DB /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		96CEB5FF16C44035000BA8DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -314,7 +312,6 @@
 		96CEB5F016C41400000BA8DB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				96CEB5FB16C43A1C000BA8DB /* ArcGIS.bundle */,
 			);
 			name = Resources;
 			path = ..;
@@ -415,7 +412,6 @@
 				96CEB5F816C43974000BA8DB /* images-3.jpeg in Resources */,
 				96CEB5F916C43974000BA8DB /* images-4.jpeg in Resources */,
 				96CEB5FA16C43974000BA8DB /* images.jpeg in Resources */,
-				96CEB5FC16C43A1C000BA8DB /* ArcGIS.bundle in Resources */,
 				96C3EC8D16C53C8700304000 /* map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,7 +584,7 @@
 		9613F4F516BAFC3300FDCB32 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(HOME)/Library/SDKs/ArcGIS";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(HOME)/Library/SDKs/ArcGIS/iOS/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spotlight/Spotlight-Prefix.pch";
 				INFOPLIST_FILE = "Spotlight/Spotlight-Info.plist";
@@ -607,7 +603,7 @@
 		9613F4F616BAFC3300FDCB32 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(HOME)/Library/SDKs/ArcGIS";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(HOME)/Library/SDKs/iOS/ArcGIS/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spotlight/Spotlight-Prefix.pch";
 				INFOPLIST_FILE = "Spotlight/Spotlight-Info.plist";

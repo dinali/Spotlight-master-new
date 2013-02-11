@@ -8,15 +8,14 @@
 //  Deployment ESRI requirements: http://resources.arcgis.com/en/help/runtime-ios-sdk/concepts/index.html#Deploying_your_application/00pw00000065000000/
 
 // start here: http://resources.arcgis.com/en/help/runtime-ios-sdk/concepts/index.html#/What_s_new_in_version_10_1_1/00pw00000067000000/
-// need to delete and re-install package to get latest 10.1.1
 
 #import <UIKit/UIKit.h>
 #import <ArcGIS/ArcGIS.h>
-//#import <MapKit/MapKit.h>
 
 //contants for data layers - ERS data layers are only dynamic
 #define kTiledMapServiceURL @"http://server.arcgisonline.com/ArcGIS/rest/services/ESRI_StreetMap_World_2D/MapServer"
-// #define kDynamicMapServiceURL @"http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StateCityHighway_USA/MapServer"
+
+//#define kDynamicMapServiceURL @"http://sampleserver1.arcgisonline.com/ArcGIS/rest/services/Specialty/ESRI_StateCityHighway_USA/MapServer"
 
 // Food Availability
 //#define kDynamicMapServiceURL @"http://gis.ers.usda.gov/ArcGIS/rest/services/fa_access/MapServer"
@@ -30,24 +29,18 @@
 //Set up constant for predefined where clause for search
 #define kLayerDefinitionFormat @"STATE_NAME = '%@'"
 
-// MKMapViewDelegate: if using the Apple mapkit instead of ESRI
-// formerly AGSMapViewLayerDelegate
-@interface FoodDesertLocatorViewController : UIViewController <AGSLayerDelegate> {
+@interface FoodDesertLocatorViewController : UIViewController <AGSMapViewLayerDelegate> {
 	
 	//container for map layers
-	AGSMapView *_mapView;  // this has to have the _ prefix!
-   // MKMapView *mapView;
+	AGSMapView *_ERSmapView;
 	
 	//this map has a dynamic layer, need a view to act as a container for it
-	//AGSDynamicMapServiceLayer *dynamicLayer;
-	//UIView *dynamicLayerView;
+	AGSDynamicMapServiceLayer * _dynamicLayer;
 }
 
-//map view is an outlet so we can associate it with UIView
-//in IB
-@property (nonatomic, retain) IBOutlet AGSMapView *mapView;  // this does not have the _
-@property (nonatomic, assign) AGSDynamicMapServiceLayer *dynamicLayer;
-@property (nonatomic, assign) UIView *dynamicLayerView;
+@property (strong, nonatomic) IBOutlet AGSMapView *ERSmapView;
+
+@property (nonatomic, strong) AGSDynamicMapServiceLayer *dynamicLayer;
 
 - (IBAction)opacitySliderValueChanged:(id)sender;
 

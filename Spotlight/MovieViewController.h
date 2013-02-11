@@ -19,9 +19,9 @@
 @property (strong, nonatomic) IBOutlet UILabel* descriptionLabel;
 @property(strong, nonatomic) IBOutlet UIImageView* logoView;
 @property(strong,nonatomic) IBOutlet UIWebView* youTubeView;
-@property (weak, nonatomic) IBOutlet UIButton *startButton;
+//@property (weak, nonatomic) IBOutlet UIButton *startButton;
 
--(IBAction) playMovie;
+//-(IBAction) playMovie;
 - (void) embedYouTube;
 
 @end

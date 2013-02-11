@@ -26,7 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"USDA-ERS";
+    //self.title = @"USDA-ERS";
     
     _myImages = [@[@"images-1.jpeg",
                  @"images-2.jpeg",

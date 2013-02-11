@@ -30,8 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"USDA-ERS";
-	
+    
     _myImages = [@[@"Background1.tiff",
                       @"Background2.tiff",
                       @"Background3.tiff"] mutableCopy];

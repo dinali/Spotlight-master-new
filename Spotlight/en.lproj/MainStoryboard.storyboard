@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="dBm-dQ-WwX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C3012" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="dBm-dQ-WwX">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -57,7 +57,7 @@ Environmental program design.</string>
                             <constraint firstItem="shX-hn-EvR" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="rFO-8E-soY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="OP1-I0-oj4"/>
+                    <navigationItem key="navigationItem" title="USDA-ERS Overview" id="OP1-I0-oj4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,13 +142,13 @@ Environmental program design.</string>
                             <outlet property="delegate" destination="WJN-sZ-cfm" id="fC5-7o-vaa"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="47D-vp-EEy"/>
+                    <navigationItem key="navigationItem" title="USDA-ERS Effects" id="47D-vp-EEy"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XhX-Bo-cmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1740" y="307"/>
         </scene>
-        <!--Mitigation Collection View Controller-->
+        <!--Mitigation Collection View Controller - USDA-ERS Mitigation-->
         <scene sceneID="w6h-J1-e9M">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="DHH-fP-vOo" customClass="MitigationCollectionViewController" sceneMemberID="viewController">
@@ -169,11 +169,11 @@ Environmental program design.</string>
                                     <rect key="frame" x="0.0" y="0.0" width="258" height="242"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="243" translatesAutoresizingMaskIntoConstraints="NO" id="oaH-xT-br0">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="233" translatesAutoresizingMaskIntoConstraints="NO" id="oaH-xT-br0">
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" type="user" id="29r-YG-30n"/>
-                                                <constraint firstAttribute="height" constant="32" id="sNO-z8-QbK"/>
+                                                <constraint firstAttribute="height" constant="55" id="NBM-hI-fYd"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" type="user" id="Zzi-MJ-9px"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <nil key="highlightedColor"/>
@@ -187,12 +187,12 @@ Environmental program design.</string>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="rLC-FR-r8B" firstAttribute="bottom" secondItem="Yxr-hA-yVe" secondAttribute="bottom" type="default" id="65b-lE-hXU"/>
-                                    <constraint firstItem="oaH-xT-br0" firstAttribute="top" secondItem="Yxr-hA-yVe" secondAttribute="top" constant="14" type="user" id="6Ug-vc-Cbl"/>
-                                    <constraint firstItem="rLC-FR-r8B" firstAttribute="leading" secondItem="Yxr-hA-yVe" secondAttribute="leading" constant="14" type="user" id="DHI-ax-bMd"/>
-                                    <constraint firstItem="rLC-FR-r8B" firstAttribute="trailing" secondItem="Yxr-hA-yVe" secondAttribute="trailing" type="default" id="Dw6-Jr-ytX"/>
-                                    <constraint firstItem="oaH-xT-br0" firstAttribute="leading" secondItem="Yxr-hA-yVe" secondAttribute="leading" constant="15" type="user" id="VSS-ie-F3R"/>
-                                    <constraint firstItem="oaH-xT-br0" firstAttribute="trailing" secondItem="Yxr-hA-yVe" secondAttribute="trailing" type="default" id="XLE-Z0-z0I"/>
+                                    <constraint firstItem="oaH-xT-br0" firstAttribute="leading" secondItem="Yxr-hA-yVe" secondAttribute="leading" constant="25" type="user" id="2Ir-2Y-JOC"/>
+                                    <constraint firstItem="rLC-FR-r8B" firstAttribute="leading" secondItem="Yxr-hA-yVe" secondAttribute="leading" constant="25" type="user" id="BeH-UL-x67"/>
+                                    <constraint firstItem="oaH-xT-br0" firstAttribute="trailing" secondItem="Yxr-hA-yVe" secondAttribute="trailing" type="default" id="I9m-Tp-0AN"/>
+                                    <constraint firstItem="oaH-xT-br0" firstAttribute="top" secondItem="Yxr-hA-yVe" secondAttribute="top" constant="11" id="Knr-aB-goL"/>
+                                    <constraint firstItem="rLC-FR-r8B" firstAttribute="trailing" secondItem="Yxr-hA-yVe" secondAttribute="trailing" type="default" id="VGS-Gr-dnZ"/>
+                                    <constraint firstItem="rLC-FR-r8B" firstAttribute="bottom" secondItem="Yxr-hA-yVe" secondAttribute="bottom" type="default" id="Vrr-LI-ia7"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="descriptionLabel" destination="oaH-xT-br0" id="PuQ-Uf-RKl"/>
@@ -223,7 +223,7 @@ Environmental program design.</string>
                             <outlet property="delegate" destination="DHH-fP-vOo" id="92z-3K-TK0"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="FtL-P9-5fA"/>
+                    <navigationItem key="navigationItem" title="USDA-ERS Mitigation" id="FtL-P9-5fA"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adc-jS-MZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,7 +249,7 @@ Environmental program design.</string>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="PNz-tL-JCO"/>
+                    <navigationItem key="navigationItem" title="USDA-ERS Publications" id="PNz-tL-JCO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k4S-0M-Lqx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -287,7 +287,7 @@ Environmental program design.</string>
             </objects>
             <point key="canvasLocation" x="1281" y="-859"/>
         </scene>
-        <!--Audio View Controller - You Tube-->
+        <!--Audio View Controller - USDA-ERS Podcasts-->
         <scene sceneID="ASV-if-7Gb">
             <objects>
                 <viewController id="AU8-WK-Ytf" customClass="AudioViewController" sceneMemberID="viewController">
@@ -354,7 +354,7 @@ Environmental program design.</string>
                     <toolbarItems>
                         <barButtonItem title="Item" id="gzq-Gu-PXg"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="You Tube" id="Zdn-40-XKw"/>
+                    <navigationItem key="navigationItem" title="USDA-ERS Podcasts" id="Zdn-40-XKw"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="4ca-6Z-2WD" id="f83-0e-ckT"/>
@@ -367,7 +367,7 @@ Environmental program design.</string>
             </objects>
             <point key="canvasLocation" x="1347" y="413"/>
         </scene>
-        <!--Movie View Controller-->
+        <!--Movie View Controller - USDA-ERS You Tube-->
         <scene sceneID="2XU-jC-lMM">
             <objects>
                 <viewController id="bPq-I7-1tw" customClass="MovieViewController" sceneMemberID="viewController">
@@ -393,41 +393,36 @@ Environmental program design.</string>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fje-fL-yW3">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="597" id="LYf-nq-86R"/>
-                                    <constraint firstAttribute="width" constant="715" id="MdW-ER-A74"/>
+                                    <constraint firstAttribute="height" constant="695" id="aJa-ZG-glU"/>
                                 </constraints>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foS-7H-JtX">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="play">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="playMovie" destination="bPq-I7-1tw" eventType="touchUpInside" id="ufI-53-tuX"/>
-                                </connections>
-                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="put some exciting, meaningful information here, maybe a summary of the video" translatesAutoresizingMaskIntoConstraints="NO" id="iNk-DB-bH7">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="134" id="LHX-pd-eIm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1op-oU-vjd" firstAttribute="leading" secondItem="ZyS-84-gH5" secondAttribute="leading" constant="22" id="1B2-i9-Ja7"/>
+                            <constraint firstItem="iNk-DB-bH7" firstAttribute="trailing" secondItem="ZyS-84-gH5" secondAttribute="trailing" type="default" id="72f-lF-xkK"/>
                             <constraint firstItem="Fje-fL-yW3" firstAttribute="top" secondItem="1op-oU-vjd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="AX5-e4-DB4"/>
+                            <constraint firstItem="1op-oU-vjd" firstAttribute="top" secondItem="ZyS-84-gH5" secondAttribute="top" constant="21" id="CWW-1c-LM0"/>
                             <constraint firstItem="97t-v0-TxL" firstAttribute="top" secondItem="ZyS-84-gH5" secondAttribute="top" constant="36" id="NcF-ao-bWg"/>
                             <constraint firstItem="97t-v0-TxL" firstAttribute="leading" secondItem="1op-oU-vjd" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Wei-D9-o86"/>
-                            <constraint firstItem="1op-oU-vjd" firstAttribute="top" secondItem="ZyS-84-gH5" secondAttribute="top" constant="21" id="ZnC-Yu-4Gl"/>
-                            <constraint firstItem="foS-7H-JtX" firstAttribute="trailing" secondItem="1op-oU-vjd" secondAttribute="trailing" type="default" id="lRK-IK-Y8L"/>
-                            <constraint firstItem="foS-7H-JtX" firstAttribute="leading" secondItem="Fje-fL-yW3" secondAttribute="leading" type="default" id="nIX-5C-Qbm"/>
-                            <constraint firstItem="Fje-fL-yW3" firstAttribute="centerX" secondItem="ZyS-84-gH5" secondAttribute="centerX" type="default" id="pJf-rf-cW9"/>
-                            <constraint firstItem="foS-7H-JtX" firstAttribute="top" secondItem="Fje-fL-yW3" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rpE-P2-VlA"/>
+                            <constraint firstItem="iNk-DB-bH7" firstAttribute="leading" secondItem="ZyS-84-gH5" secondAttribute="leading" type="default" id="YOh-b2-vAw"/>
+                            <constraint firstItem="Fje-fL-yW3" firstAttribute="leading" secondItem="ZyS-84-gH5" secondAttribute="leading" type="default" id="a1c-Zj-MCb"/>
+                            <constraint firstItem="iNk-DB-bH7" firstAttribute="bottom" secondItem="ZyS-84-gH5" secondAttribute="bottom" type="default" id="qd0-wZ-wAb"/>
+                            <constraint firstItem="Fje-fL-yW3" firstAttribute="trailing" secondItem="ZyS-84-gH5" secondAttribute="trailing" type="default" id="tFs-nk-gcG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2jD-2s-Omk"/>
+                    <navigationItem key="navigationItem" title="USDA-ERS You Tube" id="2jD-2s-Omk"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="97t-v0-TxL" id="7Si-FB-hg7"/>
                         <outlet property="logoView" destination="1op-oU-vjd" id="2f9-WB-Hzg"/>
-                        <outlet property="startButton" destination="foS-7H-JtX" id="Pln-WU-4FA"/>
                         <outlet property="youTubeView" destination="Fje-fL-yW3" id="8g8-Xa-oKK"/>
                     </connections>
                 </viewController>
@@ -439,25 +434,14 @@ Environmental program design.</string>
         <scene sceneID="cIj-Z4-V3W">
             <objects>
                 <viewController id="EPG-tE-1xb" customClass="FoodDesertLocatorViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tqt-Q3-VVS">
+                    <view key="view" contentMode="scaleToFill" id="tqt-Q3-VVS" customClass="AGSMapView">
                         <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7F-bQ-Fkz" customClass="AGSMapView">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="trailing" secondItem="tqt-Q3-VVS" secondAttribute="trailing" type="default" id="7GB-tF-GYm"/>
-                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="top" secondItem="tqt-Q3-VVS" secondAttribute="top" type="default" id="NVF-QK-EgY"/>
-                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="leading" secondItem="tqt-Q3-VVS" secondAttribute="leading" type="default" id="XIe-sO-bZW"/>
-                            <constraint firstItem="e7F-bQ-Fkz" firstAttribute="bottom" secondItem="tqt-Q3-VVS" secondAttribute="bottom" type="default" id="w5F-fU-9LR"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="USDA ERS Food Desert Locator" id="may-cN-58B"/>
                     <connections>
-                        <outlet property="mapView" destination="e7F-bQ-Fkz" id="gkI-lK-0yw"/>
+                        <outlet property="ERSmapView" destination="tqt-Q3-VVS" id="wrK-1R-fhM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p42-Vi-JN1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -549,7 +533,7 @@ Environmental program design.</string>
         <scene sceneID="VC5-v5-dYb">
             <objects>
                 <navigationController title="Video" id="NUw-8g-oEf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="movie.png" id="jxu-iK-gdu"/>
+                    <tabBarItem key="tabBarItem" title="You Tube" image="movie.png" id="jxu-iK-gdu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kaa-Lk-Jj1">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
@@ -592,9 +576,6 @@ Environmental program design.</string>
         <image name="naturalresources.jpg" width="727" height="101"/>
     </resources>
     <classes>
-        <class className="AGSMapView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGSMapView.h"/>
-        </class>
         <class className="AudioViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioViewController.h"/>
             <relationships>
@@ -628,7 +609,7 @@ Environmental program design.</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FoodDesertLocatorViewController.h"/>
             <relationships>
                 <relationship kind="action" name="opacitySliderValueChanged:"/>
-                <relationship kind="outlet" name="mapView" candidateClass="AGSMapView"/>
+                <relationship kind="outlet" name="ERSmapView" candidateClass="AGSMapView"/>
             </relationships>
         </class>
         <class className="MitigationCollectionViewController" superclassName="UICollectionViewController">
@@ -637,10 +618,8 @@ Environmental program design.</string>
         <class className="MovieViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MovieViewController.h"/>
             <relationships>
-                <relationship kind="action" name="playMovie"/>
                 <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="logoView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="youTubeView" candidateClass="UIWebView"/>
             </relationships>
         </class>
@@ -664,9 +643,6 @@ Environmental program design.</string>
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
